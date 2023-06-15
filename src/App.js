@@ -53,7 +53,7 @@ const App = ({ signOut }) => {
         event.target.reset();
     };
 
-    const deleteNote = async ({ id }) => {
+    const deleteNote = async ({ id, name }) => {
 
         // set the new notes to all existing notes EXCEPT the one to be deleted
         const newNotes = notes.filter((note) => note.id != id);
